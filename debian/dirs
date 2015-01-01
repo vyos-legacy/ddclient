@@ -1,0 +1,4 @@
+usr/sbin
+var/cache/ddclient
+etc/ppp/ip-up.d
+etc/dhcp/dhclient-exit-hooks.d

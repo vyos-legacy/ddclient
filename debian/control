@@ -1,0 +1,25 @@
+Source: ddclient
+Section: net
+Priority: extra
+Maintainer: Torsten Landschoff <torsten@debian.org>
+Build-Depends: debhelper (>= 5), po-debconf, xmlto, quilt
+Standards-Version: 3.9.5
+Homepage: http://ddclient.sf.net
+Vcs-Git: git://git.debian.org/collab-maint/ddclient.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/ddclient.git
+
+Package: ddclient
+Architecture: all
+Depends: perl5, ${misc:Depends}, lsb-base (>= 3.1), initscripts (>= 2.86)
+Recommends: libio-socket-ssl-perl
+Provides: dyndns-client
+Description: address updating utility for dynamic DNS services
+ This package provides a client to update dynamic IP addresses with
+ several dynamic DNS service providers, such as DynDNS.com.
+ .
+ This makes it possible to use a fixed hostname (such as
+ myhost.dyndns.org) to access a machine with a dynamic IP address.
+ .
+ This client supports both dynamic and (near) static services, as  well as
+ MX record and alternative name management. It caches the address, and
+ only attempts the update when it has changed.

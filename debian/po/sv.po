@@ -1,0 +1,373 @@
+# Translation of ddclient debconf template to Swedish
+# Copyright (C) 2010 Martin Bagge <brother@bsnet.se>
+# This file is distributed under the same license as the ddclient package.
+#
+# Martin Bagge <brother@bsnet.se>, 2009, 2010
+msgid ""
+msgstr ""
+"Project-Id-Version: ddclient\n"
+"Report-Msgid-Bugs-To: ddclient@packages.debian.org\n"
+"POT-Creation-Date: 2014-01-16 00:49+0100\n"
+"PO-Revision-Date: 2010-04-12 18:13+0100\n"
+"Last-Translator: Martin Bagge <brother@bsnet.se>\n"
+"Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: Sweden\n"
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:2001
+msgid "other"
+msgstr "Annan"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:2002
+msgid "Dynamic DNS service provider:"
+msgstr "Leverantör av dynamisk DNS:"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:2002
+msgid ""
+"Please select the dynamic DNS service you are using. If the service you use "
+"is not listed, choose \"other\" and you will be asked for the protocol and "
+"the server name."
+msgstr ""
+"Välj vilken leverantör av dynamisk DNS du använder. Om den leverantör du "
+"använder inte finns i listan väljer du \"annan\" och får då fylla i en del "
+"uppgifter manuellt."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:3001
+msgid "Dynamic DNS server:"
+msgstr "Dynamisk DNS-server:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:3001
+msgid ""
+"Please enter the name of the server which is providing you with dynamic DNS "
+"service (example: members.dyndns.org)."
+msgstr ""
+"Ange namnet på den server som förser dig med den dynamiska DNS-tjänsten "
+"(exempelvis members.dyndns.org)."
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:4001
+msgid "Dynamic DNS update protocol:"
+msgstr "Protokoll för uppdateringar av dynamisk DNS:"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:4001
+msgid ""
+"Please select the dynamic DNS update protocol used by your dynamic DNS "
+"service provider."
+msgstr ""
+"Ange uppdateringsprotokollet som din leverantör av dynamisk DNS använder."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:5001
+msgid "DynDNS fully qualified domain names:"
+msgstr "DynDNS, komplett domännamn:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:5001
+msgid ""
+"Please enter the list of fully qualified domain names for the local host(s) "
+"(for instance, \"myname.dyndns.org\" with only one host or \"myname1.dyndns."
+"org,myname2.dyndns.org\" for two hosts)."
+msgstr ""
+"Ange listan med kompletta domännamn för den/de lokala värden/värdarna "
+"(exempelvis \"mittnamn.dyndns.org\" för endast en värd eller \"mittnamn1."
+"dyndns.org mittnamn2.dyndns.org\" för två värdar)."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:6001
+msgid "Username for dynamic DNS service:"
+msgstr "Användarnamn för dynamisk DNS:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:6001
+msgid "Please enter the username to use with the dynamic DNS service."
+msgstr "Ange användarnamnet som ska användas för den dynamiska DNS-tjänsten."
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:7001
+msgid "Password for dynamic DNS service:"
+msgstr "Lösenord för dynamisk DNS:"
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:7001
+msgid "Please enter the password to use with the dynamic DNS service."
+msgstr "Ange lösenordet som ska användas för den dynamiska DNS-tjänsten."
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:8001
+msgid "Re-enter password to verify:"
+msgstr ""
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:8001
+msgid ""
+"Please enter your dynamic DNS service password again to make sure you typed "
+"it correctly."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:9001
+msgid "Passwords do not match"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:9001
+msgid "The two passwords you entered were not the same. Please try again."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:10001
+msgid "Find public IP using checkip.dyndns.com?"
+msgstr "Vill du nyttja checkip.dyndns.com för att hitta ditt publika IP?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:10001
+msgid ""
+"Please choose whether ddclient should try to find the IP address of this "
+"machine via the DynDNS web interface.  This is recommended for machines that "
+"are using Network Address Translation."
+msgstr ""
+"Ange om ddclient ska försöka hitta IP-adressen för den här maskinen via "
+"webbgränssnittet för DynDNS. Detta är den rekomenderade proceduren för "
+"maskiner som använder Network Address Translation (NAT)."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:11001
+msgid "Network interface used for dynamic DNS service:"
+msgstr "Nätverksgränssnitt för dynamisk DNS-tjänst:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:11001
+msgid ""
+"Please enter the name of the network interface (eth0/wlan0/ppp0/...) to use "
+"for dynamic DNS service."
+msgstr ""
+"Ange nätverksgränssnittet (eth0/wlan0/ppp0/...) som ska användas för den "
+"dynamisk DNS-tjänsten."
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:12001
+#, fuzzy
+#| msgid "Run ddclient on PPP connect?"
+msgid "Run ddclient on DHCP update?"
+msgstr "Starta ddclient vid PPP-anslutning?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:12001
+#, fuzzy
+#| msgid ""
+#| "You should enable this option if ddclient should be run every time a PPP "
+#| "connection is established. Note: This mode is not compatible with daemon "
+#| "mode."
+msgid ""
+"You should enable this option if ddclient should be run every time the IP "
+"address is changed by the DHCP client (dhclient). Note: This mode is not "
+"compatible with daemon mode."
+msgstr ""
+"Välj detta alternativ om ddclient ska startas varje gång en PPP-anslutning "
+"upprättas. OBS! Detta läge är inte kompatibelt med demonläget."
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:13001
+msgid "Run ddclient on PPP connect?"
+msgstr "Starta ddclient vid PPP-anslutning?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:13001
+msgid ""
+"You should enable this option if ddclient should be run every time a PPP "
+"connection is established. Note: This mode is not compatible with daemon "
+"mode."
+msgstr ""
+"Välj detta alternativ om ddclient ska startas varje gång en PPP-anslutning "
+"upprättas. OBS! Detta läge är inte kompatibelt med demonläget."
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:14001
+msgid "Run ddclient as daemon?"
+msgstr "Starta ddclient som demon?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:14001
+msgid ""
+"Please choose whether you want ddclient to be run in daemon mode on system "
+"startup."
+msgstr "Välj denna om ddclient ska startas som demon när systemet startar."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:15001
+msgid "Interval between ddclient runs:"
+msgstr "Intervall mellan körningar av ddclient:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:15001
+msgid ""
+"Please choose the delay between interface address checks. Values may be "
+"given in seconds (e.g. \"5s\"), in minutes (e.g. \"3m\"), in hours (e.g. \"7h"
+"\") or in days (e.g. \"1d\")."
+msgstr ""
+"Ange fördröjningen mellan uppdateringen av adresser. Värdet kan anges i "
+"sekunder (\"5s\"), minuter (\"3m\"), timmar (\"7h\") eller i dagar (\"1d\")."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid "Modified configuration file"
+msgstr "Förändrad inställningsfil"
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid ""
+"The config file /etc/ddclient.conf on your system does not consist of three "
+"entries. The automatic configuration utility cannot handle this situation."
+msgstr ""
+"Inställningsfilen /etc/ddclient.conf på ditt system består inte av tre "
+"delar. Den automatiska inställningshanteraren kan inte lösa situationen."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid ""
+"If you have edited the configuration file manually, it won't be modified. If "
+"you need a new configuration file, run \"dpkg-reconfigure ddclient\"."
+msgstr ""
+"Om du har ändrat inställningsfilen manuellt kommer den inte att redigeras. "
+"Om du behöver en ny inställningsfil kör \"dpkg-reconfigure ddclient\"."
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:17001
+msgid "From list"
+msgstr "Från lista"
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:17001
+msgid "Manually"
+msgstr "Manuellt"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:17002
+msgid "Selection method for updated names:"
+msgstr "Välj metod för uppdatering av namn:"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:17002
+msgid ""
+"You'll have to select which host names to update using ddclient.  You can "
+"select host names to update from a list (taken from your DynDNS account) or "
+"enter them manually."
+msgstr ""
+"Du måste välja vilka värdnamn som ska uppdateras av ddclient. Du kan välja "
+"från en lista (som hämtas från ditt DynDNS-konto) med värdnamn eller ange "
+"dem manuellt."
+
+#. Type: multiselect
+#. Description
+#: ../ddclient.templates:18001
+msgid "Host names to keep updated:"
+msgstr "Värdnamn som ska hållas uppdaterat/uppdaterade:"
+
+#. Type: multiselect
+#. Description
+#: ../ddclient.templates:18001
+msgid ""
+"The list of host names managed via your DynDNS account has been downloaded. "
+"Please choose the one(s) for which ddclient should be used to keep IP "
+"address records up to date."
+msgstr ""
+"Listan med värdnamn som hanterav av ditt DynDNS-konto har hämtats. Välj den "
+"eller de som ddclient ska hålla IP-adressen uppdaterad för."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid "Empty host list"
+msgstr "Tom värdlista"
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"The list of host names managed under your account is empty when retrieved "
+"from the dynamic DNS service website."
+msgstr ""
+"Listan med värdnamn som hanteras i ditt konto var tom när den hämtades från "
+"webbsidan för tjänsten som tillhandahåller dynamisk DNS."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"You may have provided an incorrect username or password, or the online "
+"account may have no host names configured."
+msgstr ""
+"Antingen så har du angivit felaktiga inloggningsuppgifter eller så finns det "
+"inga värdnamn i inställningarna ännu."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"Please check your account to be sure you have host names configured, then "
+"run \"dpkg-reconfigure ddclient\" to input your username and password again."
+msgstr ""
+"Kontrollera ditt konto för att säkerställa att det finns värdnamn att nyttja "
+"och kör sedan \"dpkg-reconfigure ddclient\" och ange dina "
+"inloggningsuppgifter på nytt."
+
+#~ msgid "www.dyndns.com"
+#~ msgstr "www.dyndns.com"
+
+#~ msgid "www.easydns.com"
+#~ msgstr "www.easydns.com"
+
+#~ msgid "www.dslreports.com"
+#~ msgstr "www.dslreports.com"
+
+#~ msgid "www.zoneedit.com"
+#~ msgstr "www.zoneedit.com"
+
+#~ msgid "ddclient update interval:"
+#~ msgstr "Fördröjning mellan uppdateringar:"

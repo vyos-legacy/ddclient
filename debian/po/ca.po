@@ -1,0 +1,385 @@
+#
+# Catalan translation for ddclient package.
+# Copyright © 2009 Torsten Landschoff.
+# This file is distributed under the same license as the ddclient package.
+#
+# Jordà Polo <jorda@ettin.org>, 2006, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 3.8.0-5\n"
+"Report-Msgid-Bugs-To: ddclient@packages.debian.org\n"
+"POT-Creation-Date: 2014-01-16 00:49+0100\n"
+"PO-Revision-Date: 2009-12-27 11:13+0100\n"
+"Last-Translator: Jordà Polo <jorda@ettin.org>\n"
+"Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:2001
+msgid "other"
+msgstr "un altre"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:2002
+msgid "Dynamic DNS service provider:"
+msgstr "Proveïdor del servei de DNS dinàmic:"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:2002
+msgid ""
+"Please select the dynamic DNS service you are using. If the service you use "
+"is not listed, choose \"other\" and you will be asked for the protocol and "
+"the server name."
+msgstr ""
+"Seleccioneu el servei de DNS dinàmic que estigueu utilitzant. Si el servei "
+"no apareix a la llista, trieu «un altre» i indiqueu a continuació el "
+"protocol i el nom del servidor."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:3001
+msgid "Dynamic DNS server:"
+msgstr "Servidor de DNS dinàmic:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:3001
+msgid ""
+"Please enter the name of the server which is providing you with dynamic DNS "
+"service (example: members.dyndns.org)."
+msgstr ""
+"Introduïu el nom del servidor on tingueu el servei de DNS dinàmic (p.ex. "
+"members.dyndns.org)."
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:4001
+msgid "Dynamic DNS update protocol:"
+msgstr "Protocol d'actualització del DNS dinàmic:"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:4001
+msgid ""
+"Please select the dynamic DNS update protocol used by your dynamic DNS "
+"service provider."
+msgstr ""
+"Seleccioneu el protocol d'actualització que utilitzi el vostre proveïdor de "
+"DNS dinàmic."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:5001
+msgid "DynDNS fully qualified domain names:"
+msgstr "Noms complets dels dominis DynDNS:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:5001
+msgid ""
+"Please enter the list of fully qualified domain names for the local host(s) "
+"(for instance, \"myname.dyndns.org\" with only one host or \"myname1.dyndns."
+"org,myname2.dyndns.org\" for two hosts)."
+msgstr ""
+"Introduïu la llista de noms de domini complets de la vostra màquina (p.ex. "
+"«nom.dyndns.org» si en teniu només un, o «nom1.dyndns.org,nom2.dyndns.org» "
+"si en teniu dos)."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:6001
+msgid "Username for dynamic DNS service:"
+msgstr "Nom d'usuari del servei de DNS dinàmic:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:6001
+msgid "Please enter the username to use with the dynamic DNS service."
+msgstr ""
+"Introduïu el nom d'usuari que utilitzeu per entrar al servei de DNS dinàmic."
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:7001
+msgid "Password for dynamic DNS service:"
+msgstr "Contrasenya del servei de DNS dinàmic:"
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:7001
+msgid "Please enter the password to use with the dynamic DNS service."
+msgstr ""
+"Introduïu la contrasenya que utilitzeu per entrar al servei de DNS dinàmic."
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:8001
+msgid "Re-enter password to verify:"
+msgstr ""
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:8001
+msgid ""
+"Please enter your dynamic DNS service password again to make sure you typed "
+"it correctly."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:9001
+msgid "Passwords do not match"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:9001
+msgid "The two passwords you entered were not the same. Please try again."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:10001
+msgid "Find public IP using checkip.dyndns.com?"
+msgstr "Voleu trobar l'adreça IP pública utilitzant checkip.dyndns.com?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:10001
+msgid ""
+"Please choose whether ddclient should try to find the IP address of this "
+"machine via the DynDNS web interface.  This is recommended for machines that "
+"are using Network Address Translation."
+msgstr ""
+"Trieu si voleu que el ddclient intenti trobar l'adreça IP pública d'aquesta "
+"màquina utilitzant la interfície web de DynDNS. És recomanable per a "
+"màquines que utilitzin NAT (Network Address Translation)."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:11001
+msgid "Network interface used for dynamic DNS service:"
+msgstr "Interfície de xarxa utilitzada per al servei de DNS dinàmic:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:11001
+msgid ""
+"Please enter the name of the network interface (eth0/wlan0/ppp0/...) to use "
+"for dynamic DNS service."
+msgstr ""
+"Introduïu la interfície de xarxa (eth0/wlan0/ppp0/...) utilitzada per al "
+"servei de DNS dinàmic."
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:12001
+#, fuzzy
+#| msgid "Run ddclient on PPP connect?"
+msgid "Run ddclient on DHCP update?"
+msgstr "Voleu executar ddclient en establir la connexió PPP?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:12001
+#, fuzzy
+#| msgid ""
+#| "You should enable this option if ddclient should be run every time a PPP "
+#| "connection is established."
+msgid ""
+"You should enable this option if ddclient should be run every time the IP "
+"address is changed by the DHCP client (dhclient). Note: This mode is not "
+"compatible with daemon mode."
+msgstr ""
+"Hauríeu d'activar aquesta opció si voleu executar el ddclient cada vegada "
+"que s'estableixi una connexió PPP."
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:13001
+msgid "Run ddclient on PPP connect?"
+msgstr "Voleu executar ddclient en establir la connexió PPP?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:13001
+#, fuzzy
+#| msgid ""
+#| "You should enable this option if ddclient should be run every time a PPP "
+#| "connection is established."
+msgid ""
+"You should enable this option if ddclient should be run every time a PPP "
+"connection is established. Note: This mode is not compatible with daemon "
+"mode."
+msgstr ""
+"Hauríeu d'activar aquesta opció si voleu executar el ddclient cada vegada "
+"que s'estableixi una connexió PPP."
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:14001
+msgid "Run ddclient as daemon?"
+msgstr "Voleu executar el ddclient com a dimoni?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:14001
+msgid ""
+"Please choose whether you want ddclient to be run in daemon mode on system "
+"startup."
+msgstr ""
+"Indiqueu si voleu que el ddclient s'executi com a dimoni en arrencar el "
+"sistema."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:15001
+msgid "Interval between ddclient runs:"
+msgstr "Interval entre les execucions del ddclient:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:15001
+msgid ""
+"Please choose the delay between interface address checks. Values may be "
+"given in seconds (e.g. \"5s\"), in minutes (e.g. \"3m\"), in hours (e.g. \"7h"
+"\") or in days (e.g. \"1d\")."
+msgstr ""
+"Trieu el retard entre les comprovacions de l'adreça de la interfície. Els "
+"valors es poden especificar en segons (p.ex. «5s»), en minuts (p.ex. «3m»), "
+"en hores (p.ex. «7h»), o en dies (p.ex. «1d»)."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid "Modified configuration file"
+msgstr "S'ha editat el fitxer de configuració"
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid ""
+"The config file /etc/ddclient.conf on your system does not consist of three "
+"entries. The automatic configuration utility cannot handle this situation."
+msgstr ""
+"El fitxer de configuració /etc/ddclient.conf d'aquest sistema no conté tres "
+"entrades. L'eina de configuració automàtica (debconf) no pot gestionar "
+"correctament aquesta situació."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid ""
+"If you have edited the configuration file manually, it won't be modified. If "
+"you need a new configuration file, run \"dpkg-reconfigure ddclient\"."
+msgstr ""
+"No es modificarà el fitxer de configuració si ja l'havíeu editat manualment. "
+"Si desitgeu generar un nou fitxer de configuració, executeu «dpkg-"
+"reconfigure ddclient»."
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:17001
+msgid "From list"
+msgstr "Des d'una llista"
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:17001
+msgid "Manually"
+msgstr "Manualment"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:17002
+msgid "Selection method for updated names:"
+msgstr "Mètode de selecció de noms a actualitzar:"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:17002
+msgid ""
+"You'll have to select which host names to update using ddclient.  You can "
+"select host names to update from a list (taken from your DynDNS account) or "
+"enter them manually."
+msgstr ""
+"Haureu de seleccionar quins noms voleu actualitzar amb el ddclient. Podeu "
+"triar a partir d'una llista (que s'obté del compte DynDNS) o introduint els "
+"noms manualment."
+
+#. Type: multiselect
+#. Description
+#: ../ddclient.templates:18001
+msgid "Host names to keep updated:"
+msgstr "Nom dels ordinadors que cal mantenir actualitzats:"
+
+#. Type: multiselect
+#. Description
+#: ../ddclient.templates:18001
+msgid ""
+"The list of host names managed via your DynDNS account has been downloaded. "
+"Please choose the one(s) for which ddclient should be used to keep IP "
+"address records up to date."
+msgstr ""
+"S'ha descarregat la llista de noms gestionats utilitzant el vostre compte "
+"DynDNS. Trieu el nom o noms que el ddclient hauria d'utilitzar per mantenir "
+"el registre d'adreces IP actualitzat."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid "Empty host list"
+msgstr "Llista de noms buida"
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"The list of host names managed under your account is empty when retrieved "
+"from the dynamic DNS service website."
+msgstr ""
+"La llista de noms d'ordinadors gestionats pel vostre compte, obtinguda de la "
+"pàgina del servei de DNS dinàmic, és buida."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"You may have provided an incorrect username or password, or the online "
+"account may have no host names configured."
+msgstr ""
+"Potser heu indicat un nom d'usuari o contrasenya que no són correctes, o el "
+"compte d'usuari no té encara noms d'ordinadors configurats."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"Please check your account to be sure you have host names configured, then "
+"run \"dpkg-reconfigure ddclient\" to input your username and password again."
+msgstr ""
+"Comproveu el vostre compte per assegurar-vos que heu configurat els noms, i "
+"després executeu «dpkg-reconfigure ddclient» per indicar un altre cop el nom "
+"d'usuari i la contrasenya."
+
+#~ msgid "www.dyndns.com"
+#~ msgstr "www.dyndns.com"
+
+#~ msgid "www.easydns.com"
+#~ msgstr "www.easydns.com"
+
+#~ msgid "www.dslreports.com"
+#~ msgstr "www.dslreports.com"
+
+#~ msgid "www.zoneedit.com"
+#~ msgstr "www.zoneedit.com"
+
+#~ msgid "ddclient update interval:"
+#~ msgstr "Interval d'actualització de ddclient:"

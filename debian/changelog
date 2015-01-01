@@ -1,0 +1,647 @@
+ddclient (3.8.1-1.1) unstable; urgency=low
+
+  [ Antonio Terceiro ]
+  * Non-maintainer upload.
+
+  [ Teemu Ikonen ]
+  * Call start-stop-daemon with --exec instead of --name. (Closes: #652298)
+  * Add dhclient exit hook and debconf configuration. (Closes: #704416)
+
+ -- Antonio Terceiro <terceiro@debian.org>  Mon, 14 Oct 2013 14:04:53 -0300
+
+ddclient (3.8.1-1) unstable; urgency=low
+
+  * Merge new upstream version 3.8.1 (closes: #334437).
+    + Removed patches that were applied upstream.
+  * Moved to git repository in collab-maint on alioth.
+
+ -- Torsten Landschoff <torsten@debian.org>  Fri, 10 Aug 2012 02:33:43 +0200
+
+ddclient (3.8.0-11.5) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix pending l10n issues. Debconf translations:
+    - Dutch; (Jeroen Schot).  Closes: #650640
+    - Bokmål, (Bjørn Steensrud).  Closes: #653585
+    - Polish (Michał Kułach).  Closes: #661475
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 06 Mar 2012 22:00:48 +0100
+
+ddclient (3.8.0-11.4) UNRELEASED; urgency=low
+
+  * Non-maintainer upload.
+  * Prevent hang if IP address check blocks. Closes: #600054
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 04 Jan 2012 17:33:35 +0200
+
+ddclient (3.8.0-11.3) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix encoding for Japanese debconf translation
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 11 Jan 2011 20:25:16 +0100
+
+ddclient (3.8.0-11.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix encoding in Brazilian debconf translation
+    Closes: #603682
+  * Vietnamese debconf translation. Closes: #598577
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 17 Nov 2010 20:13:59 +0100
+
+ddclient (3.8.0-11.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+    - Fix pending l10n issues. Debconf translations:
+    - Vietnamese (Clytie Siddall).  Closes: #572871
+    - French (Christian Perrier).  Closes: #576734
+    - Russian (Yuri Kozlov).  Closes: #577160
+    - German (Martin Eberhard Schauer).  Closes: #577277
+    - Swedish (Martin Bagge).  Closes: #577552
+    - Portuguese (Miguel Figueiredo).  Closes: #578564
+    - Slovak (Ivan Masár).  Closes: #584998
+    - Basque (Iñaki Larrañaga Murgoitio).  Closes: #585001
+    - Japanese (Kenshi Muto).  Closes: #585022
+    - Italian (Vincenzo Campanella).  Closes: #585444
+    - Brazilian Portuguese (Flamarion Jorge).  Closes: #585474
+    - Spanish (# traductor (campo Last-Translator) y ponga en copia a la
+      lista de Javier Fernandez-Sanguino).  Closes: #585492
+    - Danish (Joe Hansen).  Closes: #585707
+    - Czech (Miroslav Kure).  Closes: #585863
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 15 Jun 2010 07:38:40 +0200
+
+ddclient (3.8.0-11) unstable; urgency=low
+
+  [ Torsten Landschoff ]
+  * debian/control: Move the Vcs repository to collab-maint.
+  * Applied patch by Ezra Reeves to fix PPP and daemon mode incompatibility
+    (closes: #462207). Originally for Ubuntu (LP: #152875).
+
+  [ Marco Rodrigues ]
+  * debian/control:
+    + Bump Standards-Version to 3.8.4 (no changes).
+
+ -- Torsten Landschoff <torsten@debian.org>  Sat, 27 Feb 2010 13:09:36 +0100
+
+ddclient (3.8.0-10) unstable; urgency=low
+
+  * Use correct server for zoneedit (closes: #550799). Kudos to Ezra Reeves
+    for forwarding the Ubuntu patch.
+
+ -- Torsten Landschoff <torsten@debian.org>  Sun, 07 Feb 2010 21:39:43 +0100
+
+ddclient (3.8.0-9) unstable; urgency=low
+
+  * Update Catalan debconf translation (closes: #563836). Thanks to
+    Jordà Polo.
+  * Move all debconf interaction into config script to support
+    dpkg-preconfigure.
+
+ -- Torsten Landschoff <torsten@debian.org>  Sun, 10 Jan 2010 22:36:24 +0100
+
+ddclient (3.8.0-8) unstable; urgency=low
+
+  * Convert to new source format "3.0 (quilt)".
+  * debian/control: Bump Standards-Version (no changes required). 
+  * ddclient: Do not leak the cache content into the global configuration.
+    Thanks to Ingo Schwarze for the patch (closes: #527848).
+
+ -- Torsten Landschoff <torsten@debian.org>  Tue, 01 Dec 2009 08:05:19 +0100
+
+ddclient (3.8.0-7) unstable; urgency=low
+
+  [ Stefano Zacchiroli ]
+  * postinst: ignore debconf errors about blankhostslist, thus enabling
+    installation with non-interactive mode. Patch by Jonathan Niehof.
+    (Closes: #533888)
+  
+  [ Torsten Landschoff ]
+  * debian/{postinst,config}: Load debconf correctly, passing the same shell
+    parameters again (closes: #555151). Kudos to Jonathan Niehof for finding.
+
+ -- Torsten Landschoff <torsten@debian.org>  Tue, 24 Nov 2009 17:45:53 +0100
+
+ddclient (3.8.0-6) unstable; urgency=low
+
+  * Fix pending l10n issues. Debconf translations:
+    + Japanese (Kenshi Muto).  Closes: #551084
+    + Slovak (Ivan Masár).  Closes: #551037
+    + Czech (Miroslav Kure).  Closes: #546409
+    + German (Helge Kreutzmann).  Closes: #537520
+    + Swedish (Martin Bagge).  Closes: #536807
+    + Russian (Yuri Kozlov).  Closes: #536564
+    + French (Christian Perrier).  Closes: #535436
+    + Finnish (Esko Arajärvi).  Closes: #551376
+    + Portuguese (Miguel Figueiredo).  Closes: #551493
+    + Brazilian Portuguese (Flamarion Jorge).  Closes: #551943
+    + Italian (Vincenzo Campanella). Closes: #553042
+  
+  * Introduce ddclient.scripts-common with common functions for 
+    postinst and config scripts.
+  
+ -- Torsten Landschoff <torsten@debian.org>  Mon, 02 Nov 2009 00:19:11 +0100
+
+ddclient (3.8.0-5) unstable; urgency=low
+
+  * debian/ddclient.init: Add $syslog to Required-Start/Stop dependencies
+    (closes: #541392).
+  * Apply finish translation update (closes: #543225).
+
+ -- Torsten Landschoff <torsten@debian.org>  Sun, 23 Aug 2009 16:34:55 +0200
+
+ddclient (3.8.0-4) unstable; urgency=low
+
+  * Support translating the choices of the ddclient/fetchhosts debconf
+    template via patch by Christian Perrier (closes: #533741).
+  * Merge updated russian translation by Yuri Kozlov (closes: #533675).
+  * Update Swedish translation by Martin Bagge (closes: #534247).
+  * Update Czech translation by Miroslav Kure (closes: #534960).
+  * Pass pidfile path via ddclient command line instead of configuring it in
+    the configuration file (closes: #534974).
+  * debian/control: Add Vcs-* entries for current location of the master 
+    Bazaar repository for ddclient as requested by Savvas Radevic.
+  * debian/control: Update Standards-Version to 3.8.2 [lintian]. No changes.
+  * debian/postinst: Do not use full path when running wget [lintian].
+    + Added some notes how this has to be fixed, especially checking if 
+      wget is really installed.
+  * Update German translation provided by Helge Kreutzmann (closes: #535995).
+
+ -- Torsten Landschoff <torsten@debian.org>  Tue, 07 Jul 2009 08:39:07 +0200
+
+ddclient (3.8.0-3) unstable; urgency=low
+
+  * Add upstream changeset 110 as patch which fixes the abuse message
+    (closes: #531594).
+  * Use dh_installppp for installing our ip-up script (closes: #212862).
+  * debian/control: Increase Standards-Version to 3.8.1 (checked against
+    upgrading-checklist, no changes required).
+  * Fix handling of backslashes in password (every other character should 
+    already be fine, at least in 8 bit charsets) by escaping all backslashes
+    with another backslash in the configuration file (closes: #516282).
+  * Apply Basque translation update (closes: #516548).
+  * Apply Spanish translation update (closes: #517766).
+  * Merge Galician translation update (closes: #517515).
+
+ -- Torsten Landschoff <torsten@debian.org>  Wed, 17 Jun 2009 21:49:48 +0200
+
+ddclient (3.8.0-2) experimental; urgency=low
+
+  * Apply patch from Dan McCombs to ease usage of DynDNS services
+    (closes: #513626).
+    + This also partially fixes #285007 as it uses a web interface
+      to determine the own IP address (but only when configuring for
+      DynDNS.com services). This must be fixed for others as well.
+
+ -- Torsten Landschoff <torsten@debian.org>  Tue, 16 Jun 2009 08:09:26 +0200
+
+ddclient (3.8.0-1) unstable; urgency=low
+
+  * New upstream version.
+    + Remove daemon_doc patch. Applied upstream.
+    + Fix zoneedit.com hostname (Closes: #484166).
+  * Debconf templates and debian/control reviewed by the debian-l10n-
+    english team as part of the Smith review project. (Closes: #513082).
+  * [Debconf translation updates]
+    + Add Slovak (Closes: #514385).
+    + Add Galician (Closes: #513621).
+    + Add Bokmål, Norwegian (Closes: #515179).
+    + Update Portuguese (Closes: #515529).
+    + Update Spanish (Closes: #515202).
+    + Update Catalan (Closes: #514637).
+    + Update Czech (Closes: #513714).
+    + Update German (Closes: #514361).
+    + Update French (Closes: #514093).
+    + Update Italian (Closes: #515014).
+    + Update Swedish (Closes: #513648).
+    + Update Russian (Closes: #514894).
+    + Update Japanese (Closes: #513806).
+    + Update Vietnamese (Closes: #513578).
+  * Add watch file.
+  * debian/copyright:
+    + Correct author copyright year to 2001. Upstream COPYRIGHT file,
+      have it mentioned there, so it should be the correct one.
+
+ -- Marco Rodrigues <gothicx@sapo.pt>  Thu, 19 Feb 2009 19:53:41 +0000
+
+ddclient (3.7.3-6) unstable; urgency=low
+
+  * debian/control:
+    + Bump Standards-Version to 3.8.0 (no changes).
+    + Change priority from extra to optional.
+  * debian/ddclient.init:
+    + Change Default-Stop: to 1 (Closes: #493469).
+  * debian/rules:
+    + Call dh_installinit with -- start 20 2 3 4 5 . stop 20 1 .
+  * debian/copyright:
+    + Change license path from GPL to GPL-2.
+ 
+ -- Marco Rodrigues <gothicx@sapo.pt>  Fri, 23 Jan 2009 20:17:46 +0000
+
+ddclient (3.7.3-5) unstable; urgency=low
+
+  * Acknowledge uploads by the l10n team. Thanks, guys!
+  * Adjust wording for ddclient/interface option (closes: #230768).
+  * debian/patches/daemon_doc.diff: Document that the daemon option 
+    takes any interval (closes: #206272). Taken from upstream SVN, 
+    revision 90.
+  * Patch bug468320_minmax_logic.diff: Include the patch provided
+    by Chris Carr to fix the sanity check on max-interval
+    (closes: #468320).
+
+ -- Torsten Landschoff <torsten@debian.org>  Sun, 04 Jan 2009 22:11:08 +0100
+
+ddclient (3.7.3-4.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix pending l10n issues. Debconf translations:
+    - Swedish. Closes: #493018
+    - Ukrainian. Closes: #501979
+    - Italian. Closes: #502464
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 17 Oct 2008 20:52:05 +0200
+
+ddclient (3.7.3-4.1) unstable; urgency=low
+
+  * Non-maintainer upload to fix pending l10n issues.
+  * Updated Debconf translations:
+    - Dutch. Closes: #448020
+    - German. Closes: #448176
+  * New Debconf translations:
+    - Finnish. Closes: #479678
+    - Russian. Closes: #481101
+    - Basque. Closes: #481127
+  * [Lintian] Move debhelper commands from binary-arch to binary-indep,
+    as this is an arch: all package
+
+ -- Tobias Toedter <toddy@debian.org>  Fri, 23 May 2008 16:04:26 +0200
+
+ddclient (3.7.3-4) unstable; urgency=low
+
+  * Add nl.po translation (Closes: #413889).
+  * Fixed typo in debian/po/pt.po in dpkg-configure translation.
+  * Fixed all translation files to remove fuzzy error (Closes: #447222).
+  * Remove README.Debian, because README.ssl explains the same.
+  * Update old debian/copyright to the newest one.
+  * Add Homepage field to the control file.
+  * Update program descripton at the following files:
+    - control, ddclient.pod, ddclient.8 and ddclient.xml.
+
+ -- Marco Rodrigues <gothicx@sapo.pt>  Sat, 20 Oct 2007 14:47:09 +0100
+
+ddclient (3.7.3-3) unstable; urgency=low
+
+  * Changed some files inside debian/ to match DynDNS.com.
+    - debian/po: all .po files
+    - debian/config
+    - debian/ddclient.templates
+    - debian/ddclient.xml
+    - debian/copyright
+    - debian/ddclient.pod
+    - debian/ddclient.8
+  * debian/control: bump debhelper to version 5 and lsb-base to 3.1.
+
+ -- Marco Rodrigues <gothicx@sapo.pt>  Thu, 11 Oct 2007 15:57:07 +0100
+
+ddclient (3.7.3-2) unstable; urgency=low
+
+  * Apply changes suggested by Marco Rodrigues (thanks, Marco):
+    + Upgrade debian/compat to debhelper 5 (no adaptation needed)
+    + Add README.ssl to debian/docs (great oversight :)
+    + Add missing sample-* files to debian/examples.
+  * Fix patch for ip-up sample script (which used an IP as interface
+    name because my misreading of a bug report - shame on me).
+
+ -- Torsten Landschoff <torsten@debian.org>  Tue, 14 Aug 2007 22:51:19 +0200
+
+ddclient (3.7.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Disable patches that were adopted upstream:
+    + cachedir.diff: Cache files are now stored in /var/cache anyway.
+    + daemon_interval.diff, daemon_check.diff: Handling of the -daemon option
+      was fixed upstream.
+    + update-new-config.patch: Upstream checks for config changes now as
+      well.
+    + smc-barricade-7401bra.patch: New router type adopted upstream.
+    + abuse_msg.diff: Upstream fixed the unblock pointer for dyndns abuse.
+    + help_nonroot.diff: Help option now works for non-root users.
+    + cisco_fw.diff: URL for ip information fixed upstream.
+    + silence_undefined.diff: No more warning about undefined variables.
+    + checked_ssl_load.diff: Successful inclusion of SSL library now checked.
+
+ -- Torsten Landschoff <torsten@debian.org>  Wed, 08 Aug 2007 21:00:54 +0200
+
+ddclient (3.7.1-0ubuntu3) gutsy; urgency=low
+
+  * Re-add debian/patches/checked_ssl_load.diff which got dropped accidently in
+    last upload.
+
+ -- Michael Bienia <geser@ubuntu.com>  Sun, 17 Jun 2007 01:07:53 +0200
+
+ddclient (3.7.1-0ubuntu2) gutsy; urgency=low
+
+  * Remove the patch to change from .org to .com (LP: #116066)
+    - DynDNS team only wants .com to access their website.
+
+ -- Marco Rodrigues <gothicx@sapo.pt>  Sat, 16 Jun 2007 22:51:55 +0100
+
+ddclient (3.7.1-0ubuntu1) gutsy; urgency=low
+
+  * Updated to upstream version with lots of bug fixes (LP: #106753)
+  * Added a patch to change dyndns.org to dyndns.com (LP: #106753)
+  * Fixed and removed debian/patches that are already applied in the upstream.
+
+ -- Marco Rodrigues <gothicx@sapo.pt>  Sat, 28 Apr 2007 14:17:33 +0100
+
+ddclient (3.7.0-3ubuntu1) feisty; urgency=low
+
+  * Merge from debian unstable, remaining changes:
+    - debian/rules:
+      + call dh_installinit with -u multiuser (Teardown spec)
+    - debian/ddclient.init:
+      + improve error message when ddclient isn't set to run as a daemon
+    - debian/control: Depend on the version of initscripts in feisty.
+  * Modified Maintainer value to match Debian-Maintainer-Field Spec
+
+ -- Luke Yelavich <themuso@ubuntu.com>  Wed, 31 Jan 2007 19:54:10 +1100
+
+ddclient (3.7.0-3) unstable; urgency=low
+
+  [ Christian Perrier <bubulle@debian.org> ]
+  * Unfuzzy previously complete translations. Closes: #407774
+  * Added debconf translations:
+    - Galician. Closes: #407891
+    - Catalan. Closes: #375972
+    - Portuguese. Closes: #389654
+  * Updated debconf translations
+    - Spanish. Closes: #403545
+    - Czech. Closes: #389205
+
+  [ Torsten Landschoff <torsten@debian.org> ]
+  * Update german translation from Helge Kreutzmann.
+  * Update spanish translation from Javier Fernández-Sanguino Peña.
+  * Add missing build-dependency on quilt (closes: #408014).
+  * Add dependency for lsb-base as we are now using LSB functions.
+    Also depend on a recent version of initscripts, as it seems that
+    vars.sh is unavailable on older systems (closes: #408041).
+
+ -- Torsten Landschoff <torsten@debian.org>  Sun, 28 Jan 2007 19:44:00 +0100
+
+ddclient (3.7.0-2ubuntu1) feisty; urgency=low
+
+  * Merge from debian unstable, remaining changes:
+    - debian/control:
+      + add quilt to build-depends
+    - debian/rules:
+      + call dh_installinit with -u multiuser (Teardown spec)
+    - debian/ddclient.init:
+      + improve error message when ddclient isn't set to run as a daemon
+
+ -- Michael Bienia <geser@ubuntu.com>  Mon, 22 Jan 2007 23:05:53 +0100
+
+ddclient (3.7.0-2) unstable; urgency=low
+
+  * Silence a warning about an uninitialized value (closes: #334437).
+  * SSL support:
+    + Add a Recommends for libio-socket-ssl-perl, which is required for
+      SSL support.
+    + Generated a helpful error message if IO::Socket::SSL is not available
+      at runtime.
+    + Add README.Debian with some explanation about SSL support.
+  * debian/ddclient.init: Fix start-stop-daemon invocation to not use the
+    --exec option which does not work for scripts. Previously this could
+    lead to starting multiple ddclient instances (closes: #185368).
+  * debian/ddclient.8: Replace with place holder, as the manpage is
+    seriously outdated (closes: #195115).
+    + Add Build-Depends on xmlto, which is used to generate the manpage.
+
+ -- Torsten Landschoff <torsten@debian.org>  Sat, 20 Jan 2007 10:59:55 +0100
+
+ddclient (3.7.0-1ubuntu1) feisty; urgency=low
+
+  * Merge from Debian unstable, remaining changes:
+    - add quilt to build-depends
+    - add lsb-base to depends
+    - make init script nicer (use lsb functions)
+  * debian/ddclient.init: improve error message when ddclient isn't set to run
+    as a daemon (Closes Ubuntu: #54102)
+  * debian/rules: call dh_installinit with -u multiuser (Teardown spec)
+  * debian/control: recommend libio-socket-ssl-perl
+
+ -- Michael Bienia <geser@ubuntu.com>  Sun,  3 Dec 2006 14:51:40 +0100
+
+ddclient (3.7.0-1) unstable; urgency=low
+
+  * New upstream release.
+    + Removed patch to enable socket timeout, applied upstream already.
+  * Bumped Standards-Version to 3.7.2, no relevant changes (lintian).
+  * Fix build dependencies to use Build-Depends instead of
+    Build-Depends-Indep (lintian).
+  * Remove a low-priority note and raise the priority of a debconf note
+    used as an error message (closes: #388883).
+  * debian/ddclient.init: Add initial LSB section (lintian).
+
+ -- Torsten Landschoff <torsten@debian.org>  Fri,  1 Dec 2006 23:21:33 +0100
+
+ddclient (3.6.7-2ubuntu3) edgy; urgency=low
+
+  * add quilt to build-depends
+
+ -- Michael Bienia <michael@vorlon.ping.de>  Mon, 11 Sep 2006 00:02:45 +0200
+
+ddclient (3.6.7-2ubuntu2) edgy; urgency=low
+
+  * debian/ddclient.init: Fix incomplete merge
+    (Closes Ubuntu: #59219).
+  * debian/control: Fix lintian error regarding B-D-I.
+
+ -- Daniel T Chen <crimsun@ubuntu.com>  Wed,  6 Sep 2006 13:59:29 -0400
+
+ddclient (3.6.7-2ubuntu1) edgy; urgency=low
+
+  * Merge from Debian unstable. Remaining changes:
+    - Added dependency on lsb-base.
+    - Patch to make init script nicer.
+
+ -- William Alexander Grant <william.grant@ubuntu.com.au>  Wed,  6 Sep 2006 11:02:36 +1000
+
+ddclient (3.6.7-2) unstable; urgency=low
+
+  * Pass timeout to IO::Socket when opening the server connection to
+    avoid ddclient hangs (closes: #362724).
+  * Apply vietnamese translation patch (closes: #310192).
+  * debian/ddclient.init: Fix restart command to give sensible output. Also
+    change stop behaviour to check that the daemon has stopped to remove
+    the silly "sleep 1" command (closes: #340143).
+
+ -- Torsten Landschoff <torsten@debian.org>  Sat, 15 Apr 2006 12:37:49 +0200
+
+ddclient (3.6.7-1) unstable; urgency=low
+
+  * New upstream release (closes: #279542).
+    + Revert upstream config path change.
+  * debian/po/fr.po: Install new version by Christian Perrier
+    (closes: #335979).
+  * ddclient: Support --help option without root privileges
+    (closes: #172450).
+  * Use configured hostname for firewall access with -use=cisco
+    (closes: #345712). Thanks to Per Carlson for the patch!
+  * debian/examples: Remove example not longer included in
+    upstream source.
+
+ -- Torsten Landschoff <torsten@debian.org>  Wed,  5 Apr 2006 02:01:22 +0200
+
+ddclient (3.6.2-6ubuntu1) dapper; urgency=low
+
+  * Resynchronise with Debian.
+
+ -- Reinhard Tartler <siretart@ubuntu.com>  Sun, 13 Nov 2005 21:48:55 +0100
+
+ddclient (3.6.2-6) unstable; urgency=low
+
+  * debian/po/POTFILES.in: Fix reference for debian/templates which now is
+    debian/ddclient.templates (closes: #335896). Thanks to Thomas Huriaux.
+    + debian/rules: Call debconf-updatepo in clean target.
+    + debian/po/fr.po.save: Remove.
+
+ -- Torsten Landschoff <torsten@debian.org>  Wed, 26 Oct 2005 20:38:18 +0200
+
+ddclient (3.6.2-5) unstable; urgency=low
+
+  * ddclient (init_config): Added support for intervals passed via
+    daemon option (daemon_interval.diff).
+  * Changed default value of max-interval to 30d (closes: #129370).
+    This should also fix the high CPU usage on old machines trying to
+    update all the time (closes: #157717, #292703).
+  * Fixed quoting of complicated passwords (closes: #138139, #280736).
+  * Allow comments in the "if=" config line (closes: #171614).
+  * Use $IP instead of $1 in sample ip-up script so it works from
+    ip-up.d (closes: #127661).
+  * Apply german translation fixes by Jens Seidel (closes: #314109).
+  * Fix ddclient path in sample files (closes: #130113).
+  * debian/control: Add Provides: dyndns-client (closes: #139081).
+
+ -- Torsten Landschoff <torsten@debian.org>  Tue, 18 Oct 2005 22:54:26 +0200
+
+ddclient (3.6.2-4) unstable; urgency=low
+
+  * Hijack the package from sponsoree.
+  * Acknowledge NMU (closes: #207605, #208470, #208550, #186154). Thanks,
+    Christian!
+  * Add quilt support for managing patches.
+  * Update debhelper compatibility level to 4.
+  * Include patch by Frans Pop to update DNS info after config changes
+    (closes: #217041).
+  * Bump standards-version to 3.6.2 (no changes).
+  * Apply patch by Laurent Vivier to support SMC barricade 7401BRA
+    (closes: #311341).
+  * Handle debconf via dh_installdebconf, leading to good dependencies
+    (closes: #331794).
+  * Include l10n patches:
+    + Brazilian Portuguese translation by Felipe Augusto van de Wiel
+      (closes: #299746)
+    + Japanese translation by Kenshi Muto (closes: #307141).
+  * Fix neccessary typo reported by Clytie Siddal (closes: #310186).
+
+ -- Torsten Landschoff <torsten@debian.org>  Wed,  5 Oct 2005 11:22:21 +0200
+
+ddclient (3.6.2-3.1) unstable; urgency=low
+
+  * Non-maintainer upload to fix incredibly longstanding switch to
+    po-debconf suggestion. Closes: #207605
+  * Rewrite the templates for Debconf Templates Style Guide compliance
+  * Debconf translations:
+    - French added. Closes: #208470, #208550
+    - Spanish added. Closes: #186154
+    - Traditional Chinese added. Thanks to Kanru Chen and Asho Yeh
+    - Czech added. Thanks, as usual, to the tireless Miroslav Kure
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 16 Feb 2005 18:49:55 +0100
+
+ddclient (3.6.2-3ubuntu2) hoary; urgency=low
+
+  * added Depends on lsb-base.
+  * changed Standards version to 3.6.1
+
+ -- Daniel Holbach <dh@mailempfang.de>  Wed, 16 Mar 2005 08:44:57 +0100
+
+ddclient (3.6.2-3) unstable; urgency=low
+
+  * Acknowledge NMUs (closes: #166911, #156340, #138826, #128897). Thanks
+    Roland, Ralf!
+  * debian/config: don't overwrite user settings with default values
+    (run_ipup, run_daemon) (closes: #210703).
+  * debian/postrm: don't remove /etc/ppp/ip-up.d/ddclient which is conffile
+    (closes: #212864).
+
+ -- Felix Kröger <felix.kroeger@gmx.de>  Sun, 26 Sep 2004 20:39:54 +0200
+
+ddclient (3.6.2-2.2) unstable; urgency=low
+
+  * Non-maintainer upload during bug-squashing party.
+  * Made sure there is no execution path where db_stop is not called, so
+    that postinst doesn't hang (closes: #166911).
+
+ -- Roland Mas <lolando@debian.org>  Fri, 14 Mar 2003 23:17:53 +0100
+
+ddclient (3.6.2-2.1) unstable; urgency=low
+
+  * BSP-2002-08
+  * Non-maintainer upload (sponsored by joss@debian.org)
+  * changed /etc/ppp/ip-up.d/ddclient to comply POSIX (Closes: #156340)
+  * added a new 'smc-barricade-alt' firewall description (Closes: #138826)
+  * added german translation to the template file (Closes: #128897)
+  * use 'set -e' in debian/config.
+
+ -- Ralf Heiringhoff <ralf@frosty-geek.net>  Sun,  1 Sep 2002 15:08:18 +0200
+
+ddclient (3.6.2-2) unstable; urgency=low
+
+  * Changed error message in case of abuse (closes: #136909)
+  * Modified the init.d script to work properly with /bin/sh (closes: #136914)
+
+ -- Felix Kröger <felix.kroeger@gmx.de>  Wed,  6 Mar 2002 00:52:36 +0100
+
+ddclient (3.6.2-1) unstable; urgency=medium
+
+  * New maintainer.
+  * New upstream version.
+    + Fixes problem with web based ip detection (closes: #127775)
+  * Heavily modified debconf interface.
+  * Provides /etc/init.d/ddclient script.
+  * Provides /etc/ppp/ip-up.d/ddclient script.
+  * debian/control:
+    + Update Standards-Version to 3.5.6 (lintian - no changes needed).
+    + Add versioned depend on debconf >= 0.5.0 (lintian).
+    + Change Build-Depends to Build-Depends-Indep (lintian).
+  * debian/conffiles: Add /etc/init.d/ddclient (lintian).
+  * debian/conffiles: Add /etc/ppp/ip-up.d/ddclient.
+  * fixed sanity check of daemon interval (closes: #127298).
+
+ -- Felix Kröger <felix.kroeger@gmx.de>  Tue, 15 Jan 2002 03:45:51 +0100
+
+ddclient (3.6.0-1) unstable; urgency=high
+
+  * The "everybody talks but nobody does anything" release.
+  * New upstream release. (closes: #87109, #106156)
+  * Moved to /usr/sbin, sample init script now matches. (closes: #85200)
+  * Use note instead of text in template (closes: #106332)
+
+ -- Steve Greenland <stevegr@debian.org>  Thu, 27 Dec 2001 07:57:55 -0600
+
+ddclient (2.3.7-1) unstable; urgency=low
+
+  * Added Build-Depends
+  * New upstream release (closes:#79343)
+  * Change '==' to '=' in config script (closes:#75467)
+ -- Steve Greenland <stevegr@debian.org>  Mon, 11 Dec 2000 11:07:02 -0600
+
+ddclient (2.3.3-1) unstable; urgency=low
+
+  * Initial Release.
+  * Check that ddclient.conf is readable only by user running ddclient.
+  * Move cache file to /var/cache/ddclient
+ -- Steve Greenland <stevegr@debian.org>  Tue, 22 Aug 2000 15:28:59 -0500
+

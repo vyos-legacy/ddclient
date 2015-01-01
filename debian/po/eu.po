@@ -1,0 +1,364 @@
+# translation of ddclient_3.8.0-11.1_eu.po to Basque
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Piarres Beobide <pi@beobide.net>, 2008, 2009.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: ddclient_3.8.0-11.1_eu\n"
+"Report-Msgid-Bugs-To: ddclient@packages.debian.org\n"
+"POT-Creation-Date: 2014-01-16 00:49+0100\n"
+"PO-Revision-Date: 2010-06-08 10:23+0200\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Basque <debian-l10n-basque@lists.debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:2001
+msgid "other"
+msgstr "bestelakoa"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:2002
+msgid "Dynamic DNS service provider:"
+msgstr "DNS dinamikoaren zerbitzu hornitzailea:"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:2002
+msgid ""
+"Please select the dynamic DNS service you are using. If the service you use "
+"is not listed, choose \"other\" and you will be asked for the protocol and "
+"the server name."
+msgstr ""
+"Hautatu erabiltzen duzun DNS dinamikoaren zerbitzua. Erabiltzen duzun "
+"zerbitzua ez badago zerrendaturik, \"bestelakoa\" aukeratu ondoren protokolo "
+"eta zerbitzariaren izena galdetuko zaizkizu."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:3001
+msgid "Dynamic DNS server:"
+msgstr "DNS dinamikoaren zerbitzaria:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:3001
+msgid ""
+"Please enter the name of the server which is providing you with dynamic DNS "
+"service (example: members.dyndns.org)."
+msgstr ""
+"Idatzi DNS dinamikoaren zerbitzua hornitzen dizun zerbitzariaren izena "
+"(adibidez: members.dyndns.org)."
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:4001
+msgid "Dynamic DNS update protocol:"
+msgstr "DNS dinamikoa eguneratzeko protokoloa:"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:4001
+msgid ""
+"Please select the dynamic DNS update protocol used by your dynamic DNS "
+"service provider."
+msgstr ""
+"Hautatu DNS dinamikoa eguneratzeko protokoloa (DNS zerbitzuaren "
+"hornitzaileak erabiltzen duena)."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:5001
+msgid "DynDNS fully qualified domain names:"
+msgstr "DynDNS guztiz kualifikaturiko domeinu-izena:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:5001
+msgid ""
+"Please enter the list of fully qualified domain names for the local host(s) "
+"(for instance, \"myname.dyndns.org\" with only one host or \"myname1.dyndns."
+"org,myname2.dyndns.org\" for two hosts)."
+msgstr ""
+"Idatzi ostalari lokalaren guztiz kualifikatutako domeinu-izenen zerrenda "
+"(\"nireizena. dyndns.org\" antzeko zerbait ostalari bakar bat baduzu edo "
+"\"nireizena1.dyndns.org,nireizena2.dyndns.org\" bi ostalarirentzat)."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:6001
+msgid "Username for dynamic DNS service:"
+msgstr "DNS dinamikoaren zerbitzuaren erabiltzaile-izena:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:6001
+msgid "Please enter the username to use with the dynamic DNS service."
+msgstr "Idatzi erabiltzaile-izena DNS dinamikoaren zerbitzuan erabiltzeko."
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:7001
+msgid "Password for dynamic DNS service:"
+msgstr "DNS dinamikoaren zerbitzuaren pasahitza:"
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:7001
+msgid "Please enter the password to use with the dynamic DNS service."
+msgstr "Idatzi pasahitza DNS dinamiko zerbitzuan erabiltzeko."
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:8001
+msgid "Re-enter password to verify:"
+msgstr ""
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:8001
+msgid ""
+"Please enter your dynamic DNS service password again to make sure you typed "
+"it correctly."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:9001
+msgid "Passwords do not match"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:9001
+msgid "The two passwords you entered were not the same. Please try again."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:10001
+msgid "Find public IP using checkip.dyndns.com?"
+msgstr "Bilatu IP publikoa checkip.dyndns.com erabiliz?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:10001
+msgid ""
+"Please choose whether ddclient should try to find the IP address of this "
+"machine via the DynDNS web interface.  This is recommended for machines that "
+"are using Network Address Translation."
+msgstr ""
+"DynDNS web interfazearen bidez, aukeratu ddclient-ek ordenagailu honen IP "
+"helbidea bilatzen saiatu behar duen edo ez. Gomendagarria da NAT (Network "
+"Address Translation) erabiltzen duten ordenagailuentzako."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:11001
+msgid "Network interface used for dynamic DNS service:"
+msgstr "Sareko interfazea DNS dinamikoaren zerbitzuan erabiltzeko:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:11001
+msgid ""
+"Please enter the name of the network interface (eth0/wlan0/ppp0/...) to use "
+"for dynamic DNS service."
+msgstr ""
+"Idatzi sareko interfazea (eth0/wlan0/ppp0/...) DNS dinamikoaren zerbitzuan "
+"erabiltzeko."
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:12001
+#, fuzzy
+#| msgid "Run ddclient on PPP connect?"
+msgid "Run ddclient on DHCP update?"
+msgstr "PPP konektatzean ddclient exekutatu?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:12001
+#, fuzzy
+#| msgid ""
+#| "You should enable this option if ddclient should be run every time a PPP "
+#| "connection is established. Note: This mode is not compatible with daemon "
+#| "mode."
+msgid ""
+"You should enable this option if ddclient should be run every time the IP "
+"address is changed by the DHCP client (dhclient). Note: This mode is not "
+"compatible with daemon mode."
+msgstr ""
+"Gaitu ezazu aukera hau PPP konexio bat sortzen den bakoitzean ddclient "
+"exekutatu behar bada. Oharra: modu hau ez da bateragarria daemon moduarekin."
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:13001
+msgid "Run ddclient on PPP connect?"
+msgstr "PPP konektatzean ddclient exekutatu?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:13001
+msgid ""
+"You should enable this option if ddclient should be run every time a PPP "
+"connection is established. Note: This mode is not compatible with daemon "
+"mode."
+msgstr ""
+"Gaitu ezazu aukera hau PPP konexio bat sortzen den bakoitzean ddclient "
+"exekutatu behar bada. Oharra: modu hau ez da bateragarria daemon moduarekin."
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:14001
+msgid "Run ddclient as daemon?"
+msgstr "Exekutatu ddclient daemon gisa?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:14001
+msgid ""
+"Please choose whether you want ddclient to be run in daemon mode on system "
+"startup."
+msgstr ""
+"Aukeratu sistema abiatzean ddclient daemon gisa exekutatu behar den ala ez."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:15001
+msgid "Interval between ddclient runs:"
+msgstr "ddclient-en exekuzio arteko bitartea:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:15001
+msgid ""
+"Please choose the delay between interface address checks. Values may be "
+"given in seconds (e.g. \"5s\"), in minutes (e.g. \"3m\"), in hours (e.g. \"7h"
+"\") or in days (e.g. \"1d\")."
+msgstr ""
+"Aukeratu interfazearen helbidearen egiaztapenen arteko atzerapena. Balioak "
+"segundotan (adib. \"5s\"), minututan (adib. \"3m\"), orduetan (adib. \"7h\") "
+"edo egunetan (adib. \"1d\") eman behar dira."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid "Modified configuration file"
+msgstr "Eraldatutako konfigurazioko fitxategia"
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid ""
+"The config file /etc/ddclient.conf on your system does not consist of three "
+"entries. The automatic configuration utility cannot handle this situation."
+msgstr ""
+"Sistemako /etc/ddclient.conf konfigurazioko fitxategia ez da hiru sarreraz "
+"osatzen. Konfigurazio automatiko aren lanabesak ezin du egoera hau kudeatu."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid ""
+"If you have edited the configuration file manually, it won't be modified. If "
+"you need a new configuration file, run \"dpkg-reconfigure ddclient\"."
+msgstr ""
+"Konfigurazioko fitxategia eskuz editatu baduzu, ezingo da eraldatu. "
+"Konfigurazioko fitxategi berri bat sortu behar baduzu, exekutatu \"dpkg-"
+"reconfigure ddclient\"."
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:17001
+msgid "From list"
+msgstr "Zerrendatik"
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:17001
+msgid "Manually"
+msgstr "Eskuz"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:17002
+msgid "Selection method for updated names:"
+msgstr "Hautapenaren metodoa eguneratutako izenentzako:"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:17002
+msgid ""
+"You'll have to select which host names to update using ddclient.  You can "
+"select host names to update from a list (taken from your DynDNS account) or "
+"enter them manually."
+msgstr ""
+"ddclient-ekin eguneratu behar diren ostalari-izenak hautatu behar dituzu. "
+"Ostalarien izenak zerrendatik (DynDNSko zure kontutik) hautatu edo eskuz "
+"idatzi behar dituzu."
+
+#. Type: multiselect
+#. Description
+#: ../ddclient.templates:18001
+msgid "Host names to keep updated:"
+msgstr "Ostalari-izenak eguneratuta mantentzeko:"
+
+#. Type: multiselect
+#. Description
+#: ../ddclient.templates:18001
+msgid ""
+"The list of host names managed via your DynDNS account has been downloaded. "
+"Please choose the one(s) for which ddclient should be used to keep IP "
+"address records up to date."
+msgstr ""
+"DynDNSko zure kontutik kudeatutako ostalari-izenen zerrenda deskargatu da. "
+"Aukeratu ostalari-izen bat edo gehiago haien IP helbideen erregistroak "
+"eguneratuta mantentzeko ddclient erabiliz."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid "Empty host list"
+msgstr "Ostalarien zerrenda hutsik"
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"The list of host names managed under your account is empty when retrieved "
+"from the dynamic DNS service website."
+msgstr ""
+"Zure kontuaren bidez kudeatutako ostalari-izenen zerrenda hutsik dago DNS "
+"dinamikoaren webgunetik eskuratzean."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"You may have provided an incorrect username or password, or the online "
+"account may have no host names configured."
+msgstr ""
+"Erabiltzaile-izena edo pasahitza gaizki dago, edo lineako kontuak ez dauka "
+"ostalari-izenik konfiguratuta."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"Please check your account to be sure you have host names configured, then "
+"run \"dpkg-reconfigure ddclient\" to input your username and password again."
+msgstr ""
+"Egiaztatu zure kontua ostalarien izenak konfiguratuta daudela ziurtatzeko, "
+"gero exekutatu \"dpkg-reconfigure ddclient\" zure erabiltzaile-izena eta "
+"pasahitza berriro sartzeko."

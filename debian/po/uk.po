@@ -1,0 +1,392 @@
+# Olexandr Kravchuk
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: ddclient@packages.debian.org\n"
+"POT-Creation-Date: 2014-01-16 00:49+0100\n"
+"PO-Revision-Date: 2008-10-12 15:29+0300\n"
+"Last-Translator: Olexandr Kravchuk <sashko.debian@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:2001
+msgid "other"
+msgstr "інші"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:2002
+msgid "Dynamic DNS service provider:"
+msgstr "Динамічний провайдер DNS:"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:2002
+msgid ""
+"Please select the dynamic DNS service you are using. If the service you use "
+"is not listed, choose \"other\" and you will be asked for the protocol and "
+"the server name."
+msgstr ""
+"Будь ласка, вкажіть, який сервіс динамічних DNS ви використовуєте. Якщо "
+"використовуваного вами сервісу немає у даному переліку, оберіть\"інший\", і "
+"тоді вам буде запропоновано ввести його адресу та протокол."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:3001
+msgid "Dynamic DNS server:"
+msgstr "Динамічний сервер DNS:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:3001
+#, fuzzy
+#| msgid ""
+#| "Enter the name of the server which is providing you with dynamic DNS "
+#| "service (example: members.dyndns.org)."
+msgid ""
+"Please enter the name of the server which is providing you with dynamic DNS "
+"service (example: members.dyndns.org)."
+msgstr ""
+"Введіть ім'я домена, яке вам надає сервіс данмічних DNS(наприклад, glory-to-"
+"ukraine.dyndns.org)."
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:4001
+msgid "Dynamic DNS update protocol:"
+msgstr "Динамічний протокол оновлення DNS:"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:4001
+#, fuzzy
+#| msgid ""
+#| "Select the dynamic DNS update protocol used by your dynamic DNS service "
+#| "provider."
+msgid ""
+"Please select the dynamic DNS update protocol used by your dynamic DNS "
+"service provider."
+msgstr ""
+"Оберіть протокол оновлення динамічного DNS, який використовується "
+"провайдером даного сервісу."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:5001
+msgid "DynDNS fully qualified domain names:"
+msgstr "Повноцінні доменні імена DynDNS:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:5001
+#, fuzzy
+#| msgid ""
+#| "Enter the list of fully qualified domain names for your host (like "
+#| "\"myname.dyndns.org\" if you have only one host or \"myname1.dyndns.org,"
+#| "myname2.dyndns.org\" for two hosts)."
+msgid ""
+"Please enter the list of fully qualified domain names for the local host(s) "
+"(for instance, \"myname.dyndns.org\" with only one host or \"myname1.dyndns."
+"org,myname2.dyndns.org\" for two hosts)."
+msgstr ""
+"Введіть перелік повних доменних імен. які використовує ваш хост(наприклад, "
+"\"glory-to-ukraine.dyndns.org\", якщо ви використовуєте лише один хост, або "
+"ж \"glory-to-ukraine.dyndns.org,support-georgia.dyndns.org\",якщо два або "
+"більше)."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:6001
+msgid "Username for dynamic DNS service:"
+msgstr "Ім'я користувача для сервісу динамічного DNS:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:6001
+#, fuzzy
+#| msgid "Enter the username you use to log into the dynamic DNS service."
+msgid "Please enter the username to use with the dynamic DNS service."
+msgstr ""
+"Введіть ім'я користувача, яке використовуватиметься для сервісу динамічного "
+"DNS:"
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:7001
+msgid "Password for dynamic DNS service:"
+msgstr "Пароль для сервісу динамічного DNS:"
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:7001
+#, fuzzy
+#| msgid "Enter the password you use to log into the dynamic DNS service."
+msgid "Please enter the password to use with the dynamic DNS service."
+msgstr ""
+"Введіть пароль, який використовуватиметься для сервісу динамічного DNS:"
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:8001
+msgid "Re-enter password to verify:"
+msgstr ""
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:8001
+msgid ""
+"Please enter your dynamic DNS service password again to make sure you typed "
+"it correctly."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:9001
+msgid "Passwords do not match"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:9001
+msgid "The two passwords you entered were not the same. Please try again."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:10001
+msgid "Find public IP using checkip.dyndns.com?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:10001
+msgid ""
+"Please choose whether ddclient should try to find the IP address of this "
+"machine via the DynDNS web interface.  This is recommended for machines that "
+"are using Network Address Translation."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:11001
+#, fuzzy
+#| msgid "Interface used for dynamic DNS service:"
+msgid "Network interface used for dynamic DNS service:"
+msgstr "Інтерфейс для сервісу динамічного DNS:"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:11001
+#, fuzzy
+#| msgid "Enter the interface which is used for using dynamic DNS service."
+msgid ""
+"Please enter the name of the network interface (eth0/wlan0/ppp0/...) to use "
+"for dynamic DNS service."
+msgstr ""
+"Введіть інтерфейс, який використовуватиметься для сервісу динамічного DNS:"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:12001
+#, fuzzy
+#| msgid "Run ddclient on PPP connect?"
+msgid "Run ddclient on DHCP update?"
+msgstr "Запускати ddclient після встановлення з'єднання PPP?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:12001
+#, fuzzy
+#| msgid ""
+#| "Enable this if ddclient should be run every time a PPP connection is "
+#| "established."
+msgid ""
+"You should enable this option if ddclient should be run every time the IP "
+"address is changed by the DHCP client (dhclient). Note: This mode is not "
+"compatible with daemon mode."
+msgstr ""
+"Увімкніть цю опцію, якщо бажаєте, щоб ddclient запускався щоразу після "
+"встановлення з'єднання PPP."
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:13001
+msgid "Run ddclient on PPP connect?"
+msgstr "Запускати ddclient після встановлення з'єднання PPP?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:13001
+#, fuzzy
+#| msgid ""
+#| "Enable this if ddclient should be run every time a PPP connection is "
+#| "established."
+msgid ""
+"You should enable this option if ddclient should be run every time a PPP "
+"connection is established. Note: This mode is not compatible with daemon "
+"mode."
+msgstr ""
+"Увімкніть цю опцію, якщо бажаєте, щоб ddclient запускався щоразу після "
+"встановлення з'єднання PPP."
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:14001
+msgid "Run ddclient as daemon?"
+msgstr "Запускати ddclient, як демон?"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:14001
+msgid ""
+"Please choose whether you want ddclient to be run in daemon mode on system "
+"startup."
+msgstr ""
+"Увімкніть цю опцію, якщо бажаєте, щоб ddclient запускався у режимі "
+"демонаодразу ж після старту системи."
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:15001
+msgid "Interval between ddclient runs:"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:15001
+msgid ""
+"Please choose the delay between interface address checks. Values may be "
+"given in seconds (e.g. \"5s\"), in minutes (e.g. \"3m\"), in hours (e.g. \"7h"
+"\") or in days (e.g. \"1d\")."
+msgstr ""
+"Будь ласка, вкажіть затримку між перевірками адрес. Значення можебути "
+"вказаним у секундах (наприклад, \"5s\"), у хвилинах (наприклад, \"3m\"), у "
+"годинах (наприклад, \"7h\"), або ж у днях (наприклад, \"1d\")."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid "Modified configuration file"
+msgstr "Модифікований конфігураційний файл"
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+#, fuzzy
+#| msgid ""
+#| "The config file /etc/ddclient.conf on your system does not consist of "
+#| "three entries. The automatic configuration utility (debconf) cannot "
+#| "handle this. Maybe you modified the configuration file manually, thus it "
+#| "won't be modified. If you want a new config file to be created, please "
+#| "run \"dpkg-reconfigure ddclient\"."
+msgid ""
+"The config file /etc/ddclient.conf on your system does not consist of three "
+"entries. The automatic configuration utility cannot handle this situation."
+msgstr ""
+"Конфігураційний файл /etc/ddclient.conf відсутній на вашій системі немістить "
+"трьох записів. Утиліта для автоматичної конфігурації (debconf) не може "
+"використати його. Можливо, ви змінювали його вручну...Якщо бажаєте створити "
+"новий, виконайте команду \"dpkg-reconfigure ddclient\"."
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid ""
+"If you have edited the configuration file manually, it won't be modified. If "
+"you need a new configuration file, run \"dpkg-reconfigure ddclient\"."
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:17001
+msgid "From list"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:17001
+msgid "Manually"
+msgstr ""
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:17002
+msgid "Selection method for updated names:"
+msgstr ""
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:17002
+msgid ""
+"You'll have to select which host names to update using ddclient.  You can "
+"select host names to update from a list (taken from your DynDNS account) or "
+"enter them manually."
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#: ../ddclient.templates:18001
+msgid "Host names to keep updated:"
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#: ../ddclient.templates:18001
+msgid ""
+"The list of host names managed via your DynDNS account has been downloaded. "
+"Please choose the one(s) for which ddclient should be used to keep IP "
+"address records up to date."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid "Empty host list"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"The list of host names managed under your account is empty when retrieved "
+"from the dynamic DNS service website."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"You may have provided an incorrect username or password, or the online "
+"account may have no host names configured."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"Please check your account to be sure you have host names configured, then "
+"run \"dpkg-reconfigure ddclient\" to input your username and password again."
+msgstr ""
+
+#~ msgid "www.dyndns.com"
+#~ msgstr "www.dyndns.com"
+
+#~ msgid "www.easydns.com"
+#~ msgstr "www.easydns.com"
+
+#~ msgid "www.dslreports.com"
+#~ msgstr "www.dslreports.com"
+
+#~ msgid "www.zoneedit.com"
+#~ msgstr "www.zoneedit.com"
+
+#~ msgid "ddclient update interval:"
+#~ msgstr "Інтервал оновлення ddclient"

@@ -1,0 +1,28 @@
+=pod
+
+=head1 NAME
+
+ddclient -- Update IP addresses at dynamic DNS services
+
+=head1 SYNOPSIS
+
+ddclient B<-help>
+
+ddclient [B<-daemon> interval] [B<-proxy> host] [B<-server> host]
+[B<-protocol> type] [B<-file> configfile] [B<-cache> cachefile]
+[B<-pid> pidfile] [B<-use> mechanism] [B<-if> interface|B<-ip> ipaddress|
+B<-web> provider|url]
+
+=head1 DESCRIPTION
+
+A perl based client to update your dynamic IP address at DynDNS.com
+(or other dynamic DNS services such as Hammernode, Zoneedit or
+EasyDNS), thus allowing you and others to use a fixed hostname
+(myhost.dyndns.org) to access your machine. This client supports both
+the dynamic and (near) static services, MX setting, and alternative
+host. It caches the address, and only attempts the update if the address
+actually changes.
+
+For usage information please run ddclient -help.
+
+=cut

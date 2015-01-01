@@ -1,0 +1,144 @@
+# These templates have been reviewed by the debian-l10n-english
+# team
+#
+# If modifications/additions/rewording are needed, please ask
+# debian-l10n-english@lists.debian.org for advice.
+#
+# Even minor modifications require translation updates and such
+# changes should be coordinated with translators and reviewers.
+
+Template: ddclient/service
+Type: select
+#flag:translate:5
+__Choices: www.dyndns.com, www.easydns.com, www.dslreports.com, www.zoneedit.com, other
+Default: www.dyndns.com
+_Description: Dynamic DNS service provider:
+ Please select the dynamic DNS service you are using. If the service you use is
+ not listed, choose "other" and you will be asked for the protocol and the
+ server name.
+
+Template: ddclient/server
+Type: string
+_Description: Dynamic DNS server:
+ Please enter the name of the server which is providing you with dynamic DNS
+ service (example: members.dyndns.org).
+
+Template: ddclient/protocol
+Type: select
+Choices: dyndns2, dslreports1, easydns, hammernode1, zoneedit1, dyndns1
+Default: dyndns2
+_Description: Dynamic DNS update protocol:
+ Please select the dynamic DNS update protocol used by your dynamic DNS service
+ provider.
+
+Template: ddclient/names
+Type: string
+_Description: DynDNS fully qualified domain names:
+ Please enter the list of fully qualified domain names for the local host(s)
+ (for instance, "myname.dyndns.org" with only one host or
+ "myname1.dyndns.org,myname2.dyndns.org" for two hosts).
+
+Template: ddclient/username
+Type: string
+_Description: Username for dynamic DNS service:
+ Please enter the username to use with the dynamic DNS service.
+
+Template: ddclient/password
+Type: password
+_Description: Password for dynamic DNS service:
+ Please enter the password to use with the dynamic DNS service.
+
+Template: ddclient/password-repeat
+Type: password
+_Description: Re-enter password to verify:
+ Please enter your dynamic DNS service password again to make sure
+ you typed it correctly.
+
+Template: ddclient/password-mismatch
+Type: error
+_Description: Passwords do not match
+ The two passwords you entered were not the same. Please try again.
+
+Template: ddclient/checkip
+Type: boolean
+Default: true
+_Description: Find public IP using checkip.dyndns.com?
+ Please choose whether ddclient should try to find the IP address
+ of this machine via the DynDNS web interface.  This is recommended
+ for machines that are using Network Address Translation.
+
+Template: ddclient/interface
+Type: string
+_Description: Network interface used for dynamic DNS service:
+ Please enter the name of the network interface (eth0/wlan0/ppp0/...)
+ to use for dynamic DNS service.
+
+Template: ddclient/run_dhclient
+Type: boolean
+Default: false
+_Description: Run ddclient on DHCP update?
+ You should enable this option if ddclient should be run every time the
+ IP address is changed by the DHCP client (dhclient).
+ Note: This mode is not compatible with daemon mode.
+
+Template: ddclient/run_ipup
+Type: boolean
+Default: false
+_Description: Run ddclient on PPP connect?
+ You should enable this option if ddclient should be run every time a PPP connection is
+ established.
+ Note: This mode is not compatible with daemon mode.
+
+Template: ddclient/run_daemon
+Type: boolean
+Default: false
+_Description: Run ddclient as daemon?
+ Please choose whether you want ddclient to be run in daemon mode on system
+ startup.
+
+Template: ddclient/daemon_interval
+Type: string
+Default: 300
+_Description: Interval between ddclient runs:
+ Please choose the delay between interface address checks.
+ Values may be given in seconds (e.g. "5s"), in minutes (e.g. "3m"), in
+ hours (e.g. "7h") or in days (e.g. "1d").
+
+Template: ddclient/modifiedconfig
+Type: error
+_Description: Modified configuration file
+ The config file /etc/ddclient.conf on your system does not consist of
+ three entries. The automatic configuration utility cannot handle
+ this situation.
+ .
+ If you have edited the configuration file manually, it won't be modified.
+ If you need a new configuration file, run "dpkg-reconfigure ddclient".
+
+Template: ddclient/fetchhosts
+Type: select
+Default: From list
+__Choices: From list, Manually
+_Description: Selection method for updated names:
+ You'll have to select which host names to update using ddclient.  You can
+ select host names to update from a list (taken from your DynDNS account)
+ or enter them manually.
+
+Template: ddclient/hostslist
+Type: multiselect
+Choices: ${choices}
+_Description: Host names to keep updated:
+ The list of host names managed via your DynDNS account has been downloaded.
+ Please choose the one(s) for which ddclient should be used to keep IP address
+ records up to date.
+
+Template: ddclient/blankhostslist
+Type: error
+_Description: Empty host list
+ The list of host names managed under your account is empty when retrieved
+ from the dynamic DNS service website.
+ .
+ You may have provided an incorrect username or password, or the online account
+ may have no host names configured.
+ .
+ Please check your account to be sure you have host names configured, then run
+ "dpkg-reconfigure ddclient" to input your username and password again.

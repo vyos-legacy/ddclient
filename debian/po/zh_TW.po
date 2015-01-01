@@ -1,0 +1,386 @@
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ddclient\n"
+"Report-Msgid-Bugs-To: ddclient@packages.debian.org\n"
+"POT-Creation-Date: 2014-01-16 00:49+0100\n"
+"PO-Revision-Date: 2005-03-13 19:11+0800\n"
+"Last-Translator: Asho Yeh <asho@debian.org.tw>\n"
+"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: TAIWAN\n"
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:2001
+msgid "other"
+msgstr "其他"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:2002
+msgid "Dynamic DNS service provider:"
+msgstr "動態 DNS 服務提供者："
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:2002
+msgid ""
+"Please select the dynamic DNS service you are using. If the service you use "
+"is not listed, choose \"other\" and you will be asked for the protocol and "
+"the server name."
+msgstr ""
+"請選擇您使用的動態 DNS 服務。如果使用的服務不在列表，請選擇「其它」，然後會詢"
+"問您服務名稱和協定。"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:3001
+msgid "Dynamic DNS server:"
+msgstr "動態 DNS 伺服器"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:3001
+#, fuzzy
+#| msgid ""
+#| "Enter the name of the server which is providing you with dynamic DNS "
+#| "service (example: members.dyndns.org)."
+msgid ""
+"Please enter the name of the server which is providing you with dynamic DNS "
+"service (example: members.dyndns.org)."
+msgstr ""
+"請輸入提供您使用 動態 DNS 服務的伺服器名稱(例如： members.dyndns.org)。"
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:4001
+msgid "Dynamic DNS update protocol:"
+msgstr "動態 DNS 的更新協定："
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:4001
+#, fuzzy
+#| msgid ""
+#| "Select the dynamic DNS update protocol used by your dynamic DNS service "
+#| "provider."
+msgid ""
+"Please select the dynamic DNS update protocol used by your dynamic DNS "
+"service provider."
+msgstr "選擇您的動態 DNS 服務提供者更新 DNS 的協定。"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:5001
+msgid "DynDNS fully qualified domain names:"
+msgstr "DynDNS 完整領域名稱(FQDN)："
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:5001
+#, fuzzy
+#| msgid ""
+#| "Enter the list of fully qualified domain names for your host (like "
+#| "\"myname.dyndns.org\" if you have only one host or \"myname1.dyndns.org,"
+#| "myname2.dyndns.org\" for two hosts)."
+msgid ""
+"Please enter the list of fully qualified domain names for the local host(s) "
+"(for instance, \"myname.dyndns.org\" with only one host or \"myname1.dyndns."
+"org,myname2.dyndns.org\" for two hosts)."
+msgstr ""
+"輸入您主機的完整領域名稱(FQDN，如果您只有一台主機，就類似 \"myname.dyndns.org"
+"\"，兩台以上就類似 \"myname1.dyndns.org,myname2.dyndns.org\") 。"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:6001
+msgid "Username for dynamic DNS service:"
+msgstr "動態 DNS 服務的使用者帳號："
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:6001
+#, fuzzy
+#| msgid "Enter the username you use to log into the dynamic DNS service."
+msgid "Please enter the username to use with the dynamic DNS service."
+msgstr "輸入登入動態 DNS 服務的使用者帳號。"
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:7001
+msgid "Password for dynamic DNS service:"
+msgstr "動態 DNS 服務的使用者密碼："
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:7001
+#, fuzzy
+#| msgid "Enter the password you use to log into the dynamic DNS service."
+msgid "Please enter the password to use with the dynamic DNS service."
+msgstr "輸入登入動態 DNS 服務的使用者密碼。"
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:8001
+msgid "Re-enter password to verify:"
+msgstr ""
+
+#. Type: password
+#. Description
+#: ../ddclient.templates:8001
+msgid ""
+"Please enter your dynamic DNS service password again to make sure you typed "
+"it correctly."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:9001
+msgid "Passwords do not match"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:9001
+msgid "The two passwords you entered were not the same. Please try again."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:10001
+msgid "Find public IP using checkip.dyndns.com?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:10001
+msgid ""
+"Please choose whether ddclient should try to find the IP address of this "
+"machine via the DynDNS web interface.  This is recommended for machines that "
+"are using Network Address Translation."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:11001
+#, fuzzy
+#| msgid "Interface used for dynamic DNS service:"
+msgid "Network interface used for dynamic DNS service:"
+msgstr "動態 DNS 服務所使用的裝置介面："
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:11001
+#, fuzzy
+#| msgid "Enter the interface which is used for using dynamic DNS service."
+msgid ""
+"Please enter the name of the network interface (eth0/wlan0/ppp0/...) to use "
+"for dynamic DNS service."
+msgstr "輸入使用動態 DNS 服務的裝置介面："
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:12001
+#, fuzzy
+#| msgid "Run ddclient on PPP connect?"
+msgid "Run ddclient on DHCP update?"
+msgstr "PPP 連線時執行 ddclient ？"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:12001
+#, fuzzy
+#| msgid ""
+#| "Enable this if ddclient should be run every time a PPP connection is "
+#| "established."
+msgid ""
+"You should enable this option if ddclient should be run every time the IP "
+"address is changed by the DHCP client (dhclient). Note: This mode is not "
+"compatible with daemon mode."
+msgstr "加入該選項則每次 PPP 建立連線後，ddclient 也會跟著執行。"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:13001
+msgid "Run ddclient on PPP connect?"
+msgstr "PPP 連線時執行 ddclient ？"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:13001
+#, fuzzy
+#| msgid ""
+#| "Enable this if ddclient should be run every time a PPP connection is "
+#| "established."
+msgid ""
+"You should enable this option if ddclient should be run every time a PPP "
+"connection is established. Note: This mode is not compatible with daemon "
+"mode."
+msgstr "加入該選項則每次 PPP 建立連線後，ddclient 也會跟著執行。"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:14001
+msgid "Run ddclient as daemon?"
+msgstr "ddclient 以 daemon 模式啟動？"
+
+#. Type: boolean
+#. Description
+#: ../ddclient.templates:14001
+msgid ""
+"Please choose whether you want ddclient to be run in daemon mode on system "
+"startup."
+msgstr "系統開機時，ddclient 是否要以 daemon 模式啟動？"
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:15001
+msgid "Interval between ddclient runs:"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../ddclient.templates:15001
+msgid ""
+"Please choose the delay between interface address checks. Values may be "
+"given in seconds (e.g. \"5s\"), in minutes (e.g. \"3m\"), in hours (e.g. \"7h"
+"\") or in days (e.g. \"1d\")."
+msgstr ""
+"請選擇裝置位址檢查的時間間隔。可以秒(例如 \"5s\")\"、以分(例如 \"3m\")、以小"
+"時(例如 \"7h\") 或以天(例如 \"1d\")。"
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid "Modified configuration file"
+msgstr "修改設定檔"
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+#, fuzzy
+#| msgid ""
+#| "The config file /etc/ddclient.conf on your system does not consist of "
+#| "three entries. The automatic configuration utility (debconf) cannot "
+#| "handle this. Maybe you modified the configuration file manually, thus it "
+#| "won't be modified. If you want a new config file to be created, please "
+#| "run \"dpkg-reconfigure ddclient\"."
+msgid ""
+"The config file /etc/ddclient.conf on your system does not consist of three "
+"entries. The automatic configuration utility cannot handle this situation."
+msgstr ""
+"系統的 /etc/ddclient.conf 設定檔不包含三個主要項目以致於自動組態設定工具"
+"(debconf)無法處理。您也許先前修改過設定檔才造成無法自動設定。如果您想要建立新"
+"的設定檔，請執行 \"dpkg-reconfigure ddclient\"。"
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:16001
+msgid ""
+"If you have edited the configuration file manually, it won't be modified. If "
+"you need a new configuration file, run \"dpkg-reconfigure ddclient\"."
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:17001
+msgid "From list"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../ddclient.templates:17001
+msgid "Manually"
+msgstr ""
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:17002
+msgid "Selection method for updated names:"
+msgstr ""
+
+#. Type: select
+#. Description
+#: ../ddclient.templates:17002
+msgid ""
+"You'll have to select which host names to update using ddclient.  You can "
+"select host names to update from a list (taken from your DynDNS account) or "
+"enter them manually."
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#: ../ddclient.templates:18001
+msgid "Host names to keep updated:"
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#: ../ddclient.templates:18001
+msgid ""
+"The list of host names managed via your DynDNS account has been downloaded. "
+"Please choose the one(s) for which ddclient should be used to keep IP "
+"address records up to date."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid "Empty host list"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"The list of host names managed under your account is empty when retrieved "
+"from the dynamic DNS service website."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"You may have provided an incorrect username or password, or the online "
+"account may have no host names configured."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../ddclient.templates:19001
+msgid ""
+"Please check your account to be sure you have host names configured, then "
+"run \"dpkg-reconfigure ddclient\" to input your username and password again."
+msgstr ""
+
+#~ msgid "www.dyndns.com"
+#~ msgstr "www.dyndns.com"
+
+#~ msgid "www.easydns.com"
+#~ msgstr "www.easydns.com"
+
+#~ msgid "www.dslreports.com"
+#~ msgstr "www.dslreports.com"
+
+#~ msgid "www.zoneedit.com"
+#~ msgstr "www.zoneedit.com"
+
+#~ msgid "ddclient update interval:"
+#~ msgstr "ddclient 更新頻率："

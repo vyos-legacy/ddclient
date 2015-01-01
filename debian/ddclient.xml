@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+ "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+  <!ENTITY ddclient "ddclient">
+]>
+<refentry>
+  <refmeta>
+    <refentrytitle>ddclient</refentrytitle>
+    <manvolnum>8</manvolnum>
+  </refmeta>
+  <refnamediv>
+    <refname><command>ddclient</command></refname>
+    <refpurpose>Update IP addresses at dynamic DNS services</refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <title>SYNOPSIS</title>
+    <cmdsynopsis>
+      <command>ddclient</command>
+      <arg choice="req">-help</arg>
+    </cmdsynopsis>
+    <cmdsynopsis>
+      <command>ddclient</command>
+      <arg>-daemon <replaceable>interval</replaceable></arg>
+      <arg>-proxy <replaceable>host</replaceable></arg>
+      <arg>-server <replaceable>host</replaceable></arg>
+      <arg>-protocol <replaceable>type</replaceable></arg>
+      <arg>-file <replaceable>configfile</replaceable></arg>
+      <arg>-cache <replaceable>cachefile</replaceable></arg>
+      <arg>-pid <replaceable>pidfile</replaceable></arg>
+      <arg>-use <replaceable>mechanism</replaceable></arg>
+      <group choice="req">
+	<arg choice="plain">-if <replaceable>interface</replaceable></arg>
+	<arg choice="plain">-ip <replaceable>ipaddress</replaceable></arg>
+	<arg choice="plain">-web <group choice="req">
+	    <arg choice="plain"><replaceable>provider</replaceable></arg>
+	    <arg choice="plain"><replaceable>url</replaceable></arg>
+	  </group></arg>
+	<arg choice="plain">-fw <replaceable>firewall</replaceable></arg>
+	<arg choice="plain">-cmd <replaceable>command</replaceable></arg>
+      </group>
+    </cmdsynopsis>
+  </refsynopsisdiv>
+  <refsect1>
+    <title>DESCRIPTION</title>
+    <para>A perl based client to update your dynamic IP address at DynDNS.com
+          (or other dynamic DNS services such as Hammernode, Zoneedit or
+          EasyDNS), thus allowing you and others to use a fixed hostname
+          (myhost.dyndns.org) to access your machine. This client supports both
+          the dynamic and (near) static services, MX setting, and alternative
+          host. It caches the address, and only attempts the update if the address
+          actually changes.</para>
+    <para>For usage information please run
+    <userinput>ddclient -help</userinput> until this manpage is finished.</para>
+  </refsect1>
+</refentry>
