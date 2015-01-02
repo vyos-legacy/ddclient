@@ -1,3 +1,10 @@
+ddclient (3.8.2-2) unstable; urgency=low
+
+  [ Alex Harpin ]
+  * ddclient: add patches from debian squeeze to maintain consistency
+
+ -- Alex Harpin <development@landsofshadow.co.uk>  Fri, 02 Jan 2015 09:34:30 +0000
+ 
 ddclient (3.8.2-1) unstable; urgency=low
 
   [ Alex Harpin ]
