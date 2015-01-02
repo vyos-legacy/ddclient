@@ -1,3 +1,10 @@
+ddclient (3.8.2+vyos2+lithium3) unstable; urgency=low
+
+  [ Alex Harpin ]
+  * Revert "ddclient: add libdigest-sha1-perl to dependencies list for freedns"
+
+ -- Alex Harpin <development@landsofshadow.co.uk>  Fri, 02 Jan 2015 10:01:50 +0000
+ 
 ddclient (3.8.2+vyos2+lithium2) unstable; urgency=low
 
   * Force release
