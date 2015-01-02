@@ -36,7 +36,7 @@ my $program   = $programd;
 $program  =~ s/d$//;
 my $now       = time;
 my $hostname  = hostname();
-my $etc       = ($program =~ /test/i) ? './'   : '/etc/ddclient/';
+my $etc       = ($program =~ /test/i) ? './'   : '/etc/';
 my $cachedir  = ($program =~ /test/i) ? './'   : '/var/cache/ddclient/';
 my $savedir   = ($program =~ /test/i) ? 'URL/' : '/tmp/';
 my $msgs      = '';
@@ -89,6 +89,11 @@ my %builtinfw = (
 				  'name' => 'SMC Barricade FW',
 				  'url'  => '/status.htm',
 				  'skip' => 'IP Address',
+			        },
+    'smc-barricade-alt'      => {
+				  'name' => 'SMC Barricade FW (alternate config)',
+				  'url'  => '/status.HTM',
+				  'skip' => 'WAN IP',
 			        },
     'smc-barricade-alt'      => {
 				  'name' => 'SMC Barricade FW (alternate config)',
@@ -389,7 +394,7 @@ my %variables = (
 	'atime'               => setv(T_NUMBER, 0, 1, 0, 0,                   undef),
 	'status'              => setv(T_ANY,    0, 1, 0, '',                  undef),
 	'min-interval'        => setv(T_DELAY,  0, 0, 1, interval('30s'),     0),
-	'max-interval'        => setv(T_DELAY,  0, 0, 1, interval('25d'),     0),
+	'max-interval'        => setv(T_DELAY,  0, 0, 1, interval('30d'),     0),
 	'min-error-interval'  => setv(T_DELAY,  0, 0, 1, interval('5m'),      0),
 
 	'warned-min-interval'       => setv(T_ANY,    0, 1, 0, 0,             undef),
