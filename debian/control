@@ -10,7 +10,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/ddclient.git
 
 Package: ddclient
 Architecture: all
-Depends: perl5, ${misc:Depends}, lsb-base (>= 3.1), initscripts (>= 2.86), libdigest-sha1-perl
+Depends: perl5, ${misc:Depends}, lsb-base (>= 3.1), initscripts (>= 2.86)
 Recommends: libio-socket-ssl-perl
 Provides: dyndns-client
 Description: address updating utility for dynamic DNS services
