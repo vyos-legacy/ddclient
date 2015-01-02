@@ -1,7 +1,7 @@
 Source: ddclient
 Section: net
 Priority: extra
-Maintainer: Torsten Landschoff <torsten@debian.org>
+Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
 Build-Depends: debhelper (>= 5), po-debconf, xmlto, quilt
 Standards-Version: 3.9.5
 Homepage: http://ddclient.sf.net
