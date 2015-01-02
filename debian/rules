@@ -60,7 +60,11 @@ binary-indep: build install debian/ddclient.8
 	dh_installdeb
 	perl -w debian/dh_installscripts-common
 	dh_shlibdeps
-	dh_gencontrol
+	if [ -f "../.VYATTA_DEV_BUILD" ]; \
+		then dh_gencontrol -- -v999.dev; \
+	else \
+		dh_gencontrol; \
+	fi
 	dh_md5sums
 	dh_builddeb
 
