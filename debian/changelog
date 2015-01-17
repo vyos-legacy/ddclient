@@ -1,3 +1,12 @@
+ddclient (3.8.2+vyos2+lithium5) unstable; urgency=low
+
+  [ Alex Harpin ]
+  * ddclient: add libjson-any-perl to dependencies list for 3.8.2
+  * ddclient: update ddclient to work with the perl version in VyOS
+  * ddclient: set the required version of perl to that used in VyOS
+
+ -- Alex Harpin <development@landsofshadow.co.uk>  Sat, 17 Jan 2015 16:18:17 +0000
+ 
 ddclient (3.8.2+vyos2+lithium4) unstable; urgency=low
 
   [ Alex Harpin ]
