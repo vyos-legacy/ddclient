@@ -1,3 +1,9 @@
+ddclient (3.8.2+vyos2+lithium6) unstable; urgency=low
+
+  * Force release
+
+ -- Alex Harpin <development@landsofshadow.co.uk>  Sat, 17 Jan 2015 17:15:14 +0000
+ 
 ddclient (3.8.2+vyos2+lithium5) unstable; urgency=low
 
   [ Alex Harpin ]
