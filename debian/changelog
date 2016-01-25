@@ -1,3 +1,12 @@
+ddclient (3.8.2+vyos2+current1) unstable; urgency=medium
+
+  [ Thomas Jepp ]
+  * Build fixes for Jessie pbuilder:  - Remove debian/source/format to stop it looking for quilt patches to apply  - Fix the renamed libdigest-sha-perl dependency
+
+  [ Kim Hagen ]
+
+ -- Kim Hagen <kim.sidney@gmail.com>  Mon, 25 Jan 2016 03:37:41 -0500
+
 ddclient (3.8.2+vyos2+lithium7) unstable; urgency=low
 
   * ddclient: update dh_gencontrol with new development build flag
