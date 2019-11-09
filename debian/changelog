@@ -1,3 +1,10 @@
+ddclient (3.9.0+vyos2+current1) unstable; urgency=medium
+
+  [ Christian Poessinger ]
+  * Merge Upstream version v3.9.0
+
+ -- Christian Poessinger <christian@poessinger.com>  Sun, 20 Oct 2019 12:56:41 +0200
+
 ddclient (3.8.2+vyos2+current1) unstable; urgency=medium
 
   [ Thomas Jepp ]
